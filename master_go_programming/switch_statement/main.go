@@ -5,6 +5,8 @@ import "fmt"
 func main() {
 	language := "Golang"
 
+	// The break is automatically
+
 	switch language {
 	case "PHP":
 		fmt.Println("PHP language :D")

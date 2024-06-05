@@ -21,12 +21,14 @@ func foobar() {
 	fmt.Println("This is foobar()!")
 }
 
-//Defer is related with scope!!!!
+// Defer is related with scope!!!!
 func scopeTest() {
 	defer fmt.Println("This is  scope() - defer!")
 	fmt.Println("This is  scope()!")
 }
 
+// Defer execution is like a STACK: FIRST IN - LAST OUT
+// Postpone the execution before returning in the function
 func main() {
 
 	scopeTest()
