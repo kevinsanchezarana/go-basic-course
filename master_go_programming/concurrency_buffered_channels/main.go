@@ -42,7 +42,7 @@ func main() {
 	}
 
 	// After running the program  we notice that the goroutines start sending data
-	// into the channel BEFORE the main goroutine had a chancesssss
+	// into the channel BEFORE the main goroutine had a chan
 	// to receive data from the channel.
 
 	// The sender of this buffered channel will block only when there is no empty slot in the channel, in this
