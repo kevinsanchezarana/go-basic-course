@@ -37,6 +37,7 @@ func main() {
 
 	// receiving data from the channel
 	for v := range c1 { // v is the value read from the channel, it's like using v := <- c2
+		fmt.Printf("len %d , cap %d \n", len(c1), cap(c1))
 		fmt.Println("main goroutine received value from channel:", v)
 
 	}
